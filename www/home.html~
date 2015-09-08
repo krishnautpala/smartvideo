@@ -1,0 +1,63 @@
+<html><link rel="icon" href=images/smartPlaylogo_icon.png ><title> Smart Video</title>
+<head>
+<link rel="stylesheet" href="css/home.css">
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/skiptable.js"></script>
+
+  <!-- Chang URLs to wherever Video.js files will be hosted -->
+  <link href="js/video-js/video-js.css" rel="stylesheet" type="text/css">
+  <!-- video.js must be in the <head> for older IEs to work. -->
+  <script src="js/video-js/video.js"></script>
+
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+  <script>
+    videojs.options.flash.swf = "js/video-js/video-js.swf";
+  </script>
+</head>
+<!--BODY CODE STARTS-->
+<body class="content">
+<div class="header">
+	<a href="home.html"><img src=images/smartPlaylogoC.png alt=images/smartPlaylogo.png style="position: absolute; top: 8; width:175;height:60 "></a>
+	<div>
+		<form  class="searchbar" action="" method="get">
+			<input type="text" name="query" id="query" size=80 value="">
+			<input type="submit" value="Search">
+			<input type="hidden" name="search" value="1">
+			<input type="submit" value="My Videos">
+		</form>
+    		<div class="headermenu">
+			<a href="signin.html"><input style="background:#1E90FF; color:#800000;" type="submit" value="Sign in"></a>
+    		</div>
+  </div>
+  <hr color="#E8E8E8 " width=120%;>
+</div>
+<!-- the player array -->
+<div style="margin-top: 8em">
+  <div style="margin-left: 2em;">
+         <video class="video-js vjs-big-play-button" controls preload="auto" width="640" height="480"
+      data-setup='{}'>
+            <source src="data/BigBuckBunny.mp4" type='video/mp4'/>
+        </video>
+  </div>
+  	<form class="skipForm">
+    <h2><p style="color: red;">Skip Table </p></h2>
+    <table id ="myTable">
+      <tr style="background-color:#9191FF; " align="center" >
+        <td style="width:12em"><h3>Start Time</h3></td>
+        <td style="width:12em"><h3>End Time</h3></td>
+        <td style="width:12em"><h3>Filter Rating</h3></td>
+        <td style="width:12em"><h3>Skip Type</h3></td>
+      </tr>
+    </table>
+        <input  type="button" value="Add" onclick="addField();">
+        <input  type="button" value="Delete" onclick="deleteRow();">
+        <input  type="button" value="Save" onclick="readTextFile('dbf');">
+        <button id="convert-table" >Convert!</button>
+  </form>
+</div>
+
+
+<!--Comments-->
+<h2> Comments Start Here </h2>
+</body>
+</html>

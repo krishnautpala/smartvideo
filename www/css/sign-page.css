@@ -1,0 +1,19 @@
+.sign-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.login-bg{
+    display: block;
+    margin: 0 auto;
+    width: 20em;
+    height: 24em;
+    border-width: 1px;
+    border-style: solid;
+    color: #A8A8D8;
+}
+
+.center{
+    display: block;
+    margin: 0 auto;
+}

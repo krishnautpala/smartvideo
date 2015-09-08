@@ -1,0 +1,22 @@
+{
+ "fileName": "BBB",
+ "fileLength": "00:10:17",
+ "fileFormat": "MP4",
+ "originalRating":"PG-14",
+ "splits": [
+ 	{
+ 	"startTime":"00:00:39",
+ 	"endTime":"00:01:23",
+ 	"filterRating":"PG-13",
+ 	"SkipType":"Violent"
+ 	},
+ 	{
+ 	"startTime":"00:00:39",
+ 	"endTime":"00:01:23",
+ 	"filterRating":"PG-13",
+ 	"SkipType":"Violent"
+ 	}
+ ]
+ 	
+
+}
